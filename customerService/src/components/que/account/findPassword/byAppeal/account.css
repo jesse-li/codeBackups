@@ -1,0 +1,118 @@
+.title {
+    width: 720px;
+    background: #fff;
+    padding: 40px 30px 30px 30px;
+    box-sizing: border-box;
+}
+
+.title > p {
+    font-size: 24px;
+    color: #999;
+    margin-top: 30px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 30px;
+    color: #333;
+}
+
+div {
+    width: 720px;
+    box-sizing: border-box;
+    padding: 0 30px;
+    position: relative;
+    margin-top: 20px;
+    background: #fff;
+}
+
+div.content > p {
+    position: relative;
+}
+
+div.content > p > a {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 97px;
+    font-size: 24px;
+    color: #ed751a;
+}
+
+div.content > p > img {
+    width: 23px;
+    height: 32px;
+    vertical-align: text-bottom;
+}
+
+div.content > p > input {
+    border: none;
+    width: 595px;
+    height: 97px;
+    line-height: 97px;
+    font-size: 28px;
+    box-sizing: border-box;
+    padding-left: 40px;
+}
+.re-send.time{
+	color: #ed751a;
+	
+}
+.account {
+    width: 500px;
+}
+
+div.content > p > input.SMS {
+    width: 395px;
+}
+
+.time {
+    display: inline-block;
+    width: 200px;
+    height: 96px;
+    line-height: 96px;
+    text-align: right;
+    font-size: 24px;
+    color: #999;
+    position: relative;
+    text-align: center;
+}
+
+.time:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 24px;
+    width: 1px;
+    height: 48px;
+    background: #E1E1E1;
+}
+
+
+
+.problem {
+    font-size: 24px;
+    color: #999;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.problem > a {
+    color: #0098e6;
+}
+
+.next {
+    display: block;
+    width: 660px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    background: #ed751a;
+    font-size: 28px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 40px;
+}

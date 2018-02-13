@@ -1,0 +1,87 @@
+.title {
+    width: 720px;
+    background: #fff;
+    padding: 40px 30px 30px 30px;
+    box-sizing: border-box;
+}
+
+.title > p {
+    font-size: 24px;
+    color: #999;
+    margin-top: 30px;
+}
+
+.title > h2 {
+    font-weight: normal;
+    font-size: 30px;
+    color: #333;
+}
+
+div.content {
+    position: relative;
+    margin-top: 20px;
+    background: #fff;
+}
+
+div.content input {
+    border: none;
+    width: 720px;
+    box-sizing: border-box;
+    padding: 0 30px;
+    height: 96px;
+    line-height: 96px;
+    font-size: 28px;
+}
+
+input:first-of-type {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+::-webkit-input-placeholder {
+    font-size: 28px;
+    color: #ccc;
+}
+
+:-moz-placeholder {
+    font-size: 28px;
+    color: #ccc;
+}
+
+::-moz-placeholder {
+    font-size: 28px;
+    color: #ccc;
+}
+
+:-ms-input-placeholder {
+    font-size: 28px;
+    color: #ccc;
+}
+
+.next {
+    display: block;
+    width: 660px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    border-radius: 10px;
+    background: #ed751a;
+    font-size: 28px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.textBox {
+    width: 378px;
+    height: 90px;
+    line-height: 90px;
+    border-radius: 10px;
+    background: #333;
+    text-align: center;
+    font-size: 28px;
+    color: #fff;
+    margin: 0 auto;
+    margin-top: 40px;
+    /*display: none;*/
+}
+

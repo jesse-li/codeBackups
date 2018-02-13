@@ -1,0 +1,262 @@
+.title {
+	width: 720px;
+	background: #fff;
+	padding: 40px 30px 30px 30px;
+	box-sizing: border-box;
+}
+
+.title>p {
+	font-size: 24px;
+	color: #999;
+	margin-top: 30px;
+}
+
+.title>h2 {
+	font-weight: normal;
+	font-size: 30px;
+	color: #333;
+}
+
+div.content {
+	width: 720px;
+	position: relative;
+	margin-top: 20px;
+	background: #fff;
+}
+
+div.content>div {
+	width: 720px;
+	box-sizing: border-box;
+	padding: 0 30px;
+}
+
+div.content>div>div,div.content>div>section>div {
+	position: relative;
+	border-top: 1px solid #e1e1e1;
+	/*border-bottom: 1px solid #e1e1e1;*/
+}
+
+div.content>div>div:first-of-type {
+	border-top: none;
+}
+
+div.content h3 {
+	border-bottom: 1px solid #e1e1e1;
+	padding: 0 30px;
+	line-height: 70px;
+	font-size: 24px;
+	color: #ff6a28;
+	font-weight: normal;
+	position: relative;
+}
+
+div.content h3>a {
+	display: block;
+	width: 20px;
+	height: 20px;
+	position: absolute;
+	top: 0;
+	right: 30px;
+}
+
+
+
+div.content>div>div>a,div.content>div>section>div>a {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 0;
+	line-height: 97px;
+	font-size: 24px;
+	color: #ed751a;
+}
+
+.chooseBox {
+	display: inline-block;
+	position: relative;
+	width: 620px;
+	line-height: 96px;
+	background: #fff;
+	font-size: 28px;
+	color: #ccc;
+	vertical-align: middle;
+	box-sizing: border-box;
+	padding-left: 35px;
+}
+
+.chooseBox .choose {
+	display: block;
+}
+
+.chooseBox ul {
+	position: absolute;
+	top: 96px;
+	right: -20px;
+	width: 357px;
+	height: 425px;
+	z-index: 5;
+	color: #333;
+	background: #fff;
+	border: 2px solid #f2f2f2;
+}
+
+.chooseBox ul:before {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 20px;
+	top: -12px;
+	width: 19px;
+	height: 19px;
+	background: #fff;
+	border-top: 2px solid #f2f2f2;
+	border-right: 2px solid #f2f2f2;
+	z-index: 5;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.chooseBox ul li {
+	line-height: 85px;
+}
+
+.chooseBox ul li a {
+	display: block;
+	padding: 0 20px;
+}
+
+.chooseBox ul li a div {
+	display: inline-block;
+	width: 70px;
+	height: 35px;
+	text-align: center;
+}
+
+.chooseBox ul li a img,
+.chooseBox ul li a span {
+	vertical-align: middle;
+	margin: 0 10px;
+}
+
+.chooseBox ul li a.curr {
+	background: #f8f8f8;
+}
+
+div.content>div>div>span:first-of-type,div.content>div>section>div>span:first-of-type {
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	text-align: center;
+}
+
+div.content>div>div>span>img,div.content>div>section>div>span>img {
+	vertical-align: middle;
+}
+
+div.content>div>div>input,div.content>div>section>div>input {
+	border: none;
+	width: 595px;
+	line-height: 97px;
+	font-size: 28px;
+	box-sizing: border-box;
+	padding-left: 35px;
+	vertical-align: middle;
+}
+
+textarea {
+	width: 660px;
+	height: 260px;
+	border: 1px solid #e1e1e1;
+	border-radius: 10px;
+	font-size: 29px;
+	color: #ccc;
+	padding-top: 30px;
+	box-sizing: border-box;
+	padding-left: 20px;
+	margin-bottom: 30px;
+}
+
+div.content>div>p>input.account {
+	width: 500px;
+}
+
+.time {
+	display: inline-block;
+	width: 200px;
+	height: 96px;
+	line-height: 96px;
+	text-align: right;
+	font-size: 24px;
+	color: #999;
+	position: relative;
+}
+
+.time:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 24px;
+	width: 1px;
+	height: 48px;
+	background: #E1E1E1;
+}
+
+::-webkit-input-placeholder {
+	font-size: 28px;
+	color: #ccc;
+}
+
+:-moz-placeholder {
+	font-size: 28px;
+	color: #ccc;
+}
+
+::-moz-placeholder {
+	font-size: 28px;
+	color: #ccc;
+}
+
+:-ms-input-placeholder {
+	font-size: 28px;
+	color: #ccc;
+}
+
+.problem {
+	font-size: 24px;
+	color: #999;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.problem>a {
+	color: #0098e6;
+}
+
+.addInfo {
+	display: block;
+	font-size: 28px;
+	color: #ff6a28;
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 50px;
+}
+
+.addInfo>a {
+	font-size: 28px;
+	color: #ff6a28;
+}
+
+.background {
+	display: block;
+	width: 24px;
+	height: 14px;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	margin-top: -7px;
+	background: url('down.png') no-repeat;
+}

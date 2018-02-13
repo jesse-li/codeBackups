@@ -1,0 +1,44 @@
+.success {
+	width: 720px;
+	background: #FFFFFF;
+	height: 100%;
+	text-align: center;
+	padding: 100px 30px;
+	box-sizing: border-box;
+}
+
+.success>img {
+	width: 100px;
+	height: 100px;
+}
+
+.success>p {
+	text-align: center;
+	font-size: 32px;
+	color: #51c000;
+	margin-top: 70px;
+}
+
+.success>div {
+	font-size: 24px;
+	color: #999;
+	margin-top: 60px;
+}
+
+.success>div>span {
+	color: #ed751a;
+}
+
+.success>a {
+	display: block;
+	width: 660px;
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	border-radius: 10px;
+	background: #ed751a;
+	font-size: 28px;
+	color: #fff;
+	margin: 0 auto;
+	margin-top: 40px;
+}
