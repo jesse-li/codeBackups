@@ -1,0 +1,108 @@
+
+<script id="resultTem" type="text/html">
+	[:if(wins.category === 1 || wins.category === 4){:]
+		[:if(type === 'start'){:]
+			<section class="result">
+				<section>
+					<a class="close" href="javascript:close()" target="_self"></a>
+					<h3>恭喜您</h3>
+					<p>手气不错，<i>[:=wins.name:]</i>已到手</p>
+					<img src="[:=wins.imgUrl:]"/>
+					<a class="to" href="javascript:to('ing')" target="_self">去兑奖</a>
+				</section>
+				
+			</section>
+		[:}else if(type === 'ing'){:]
+			<section class="result">
+				<section>
+					<a class="close" href="javascript:close()" target="_self"></a>
+				<section class="ll-box">
+					<section class="info clearfix">
+						<img src="[:=wins.imgUrl:]"/>
+						<div>
+							<h3>[:=wins.name:]</h3>
+							[:if(wins.content===''){:]
+								<p>&nbsp;</p>
+							[:}else{:]
+								<p>[:=wins.content:]</p>
+							[:}:]
+							
+							<p>¥[:=wins.price:]</p>
+						</div>
+					</section>
+					[:if(wins.category === 4){:]
+						<input placeholder="填写领取流量手机号" type="text" name="" id="phone" value="" />
+					[:}else{:]
+						[:if(address){:]
+						<input type="hidden" name="" id="addressId" value="[:=address.id:]" />
+							<input placeholder="收货联系人" type="text" name="" id="name" value="[:=address.contactName:]" />
+						<input placeholder="收货手机号" type="text" name="" id="phone" value="[:=address.contactPhone:]" />
+						<input placeholder="收货地址" type="text" name="" id="address" value="[:=address.contactAddress:]" />
+						[:}else{:]
+						<input type="hidden" name="" id="addressId" value="0" />
+						<input placeholder="收货联系人" type="text" name="" id="name" value="" />
+						<input placeholder="收货手机号" type="text" name="" id="phone" value="" />
+						<input placeholder="收货地址" type="text" name="" id="address" value="" />
+						[:}:]
+						
+						
+					[:}:]
+					
+					<p class="error"></p>
+					<a class="to" href="javascript:submitInfo()" target="_self">提交兑奖</a>
+				</section>
+				</section>
+				
+				
+			</section>
+		[:}else{:]
+			<section class="result">
+				<section>
+					<a class="close" href="javascript:close()" target="_self"></a>
+					<h3>兑现成功</h3>
+					<p>工作人员会尽快安排奖品发放，请耐心等待~</p>
+					<a class="to" href="javascript:close()" target="_self">继续翻牌</a>
+				</section>
+				
+			</section>
+		[:}:]
+		
+	[:}else if(wins.category === 0){:]
+		<section class="result">
+			<section>
+				<a class="close" href="javascript:close()" target="_self"></a>
+				<h3>真遗憾</h3>
+				<p>别灰心，大奖就在那里，下次就能抽中了~</p>
+				<a class="go-on to" href="javascript:close()" target="_self">继续抽奖</a>
+			</section>
+			
+		</section>
+		
+	[:}else{:]
+		<section class="result">
+			<section>
+				<a class="close" href="javascript:close()" target="_self"></a>
+				<h3>恭喜您</h3>
+				<p><i>[:=wins.name:]</i>已发放，受网络影响接收可能会有延迟，请谅解~</p>
+				<img src="[:=wins.imgUrl:]"/>
+				<a class="go-on to" href="javascript:close()" target="_self">继续抽奖</a>
+			</section>
+			
+		</section>
+	[:}:]
+</script>
+<script id="tips" type="text/html">
+	<section class="result">
+		<section>
+			<a class="close" href="javascript:close(false)" target="_self"></a>
+			<p>[:=desc:]</p>
+			<a class="go-on to" href="javascript:close(false)" target="_self">好的</a>
+		</section>
+		
+	</section>
+</script>
+<script id="winsList" type="text/html">
+	[:for(var i = 0,j = data.listWinner.length;i<j;i+=1){:]
+		<li>[:=data.listWinner[i].nickName:]<em>翻中</em><i>[:=data.listWinner[i].thingName:]</i></li>
+	[:}:]
+</script>

@@ -1,0 +1,16 @@
+{
+	"code":2000,
+	"data":{
+		"freeCount":0, 
+		"letteryPrice":10, 
+		"listWinner":[
+			{
+				"nickName":"乐友10001234", 
+				"thingName":"100金币"
+			}
+		],
+		"totalCount":1 
+	},
+	"error":"",
+	"desc":"成功!"
+}

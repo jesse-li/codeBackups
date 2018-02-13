@@ -1,0 +1,36 @@
+{
+  "code": 2000,
+  "data": {
+    "address":{
+      "id":123,
+      "contactName":"联系人",
+      "contactPhone":"13888888888",
+      "contactAddress":"详细地址",
+      "contactZipCode":"641300"
+    },
+    "flipLotteryThings": [
+      {
+        "id": 56,
+        "imgUrl": "https://img.d.cn/be/image/1609/ww3p5it8dmouy.png",
+        "name": "谢谢参与",
+        "win": false
+      },
+      {
+        "id": 51,
+        "imgUrl": "https://img.d.cn/be/image/1609/vz3pcit8chiuk.png",
+        "name": "500MB流量包",
+        "content":"规格",
+        "price":100,
+        "category":1,
+        "win": true
+      }
+    ],
+    "freeCount": 94,
+    "letteryPrice": 300,
+    "listWinner": null,
+    "totalCount": 100,
+    "id":12324
+  },
+  "error": "数据库上扣扣上",
+  "desc": "成功!"
+}
